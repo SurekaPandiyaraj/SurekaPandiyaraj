@@ -12,6 +12,8 @@ namespace CarRentalManagementSystem
         private string Brand { get; set; }
         private string Model { get; set; }
         private decimal RentalPrice { get; set; }
+        public int TotalCar {  get; set; }
+      
 
         public Car(int carId, string brand, string model, decimal rentalPrice)
         {
@@ -19,6 +21,7 @@ namespace CarRentalManagementSystem
             Brand = brand;
             Model = model;
             RentalPrice = rentalPrice;
+            TotalCar++;
         }
 
         public override string ToString()
